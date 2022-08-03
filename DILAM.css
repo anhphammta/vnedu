@@ -1,0 +1,142 @@
+/* ==========RESET CSS================ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-first{
+    display: flex;
+    justify-content: center;
+    padding-top: 50%;
+    position: relative;
+    background: url('./background/backgroud_login.0c8df954.jpg') top center/cover no-repeat;
+}
+
+.main-first .main-container{
+    bottom: 50%;
+    width: 400px;
+    height: 420px;  
+    padding: 32px 16px;
+    position: absolute;
+    background-color: #fff;
+    transform: translateY(50%);
+    box-shadow: 0 0 5px #333;
+    border-radius: 4px;
+    animation: getDown ease-in 1s;
+}
+
+.main-first .footer-layout{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 140px;
+}
+
+.footer-layout .paragraph-footer{
+    font-size: 12px;
+    color: #333;
+}
+
+.main-container .heading{
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.main-container .heading .heaidng-img{
+    width: 72px;
+    height: 80px;  
+}
+
+.form{
+    margin: 0px 16px;
+}
+
+.form .input-wr{
+    display: block;
+    border: 1px solid #ccc;
+    padding: 16px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.form .input-wr:focus{
+    outline: none;
+    border: 1px solid #0073e6;
+}
+
+.form #input-wr-two{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    /* position: relative; */
+    display: inline-block;
+}
+
+.password-user{
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.icon-input{
+    position: absolute;
+    margin-right: 15px;
+}
+
+.icon-input .icon-narrow{
+    line-height: 65px;
+    color: #0073e6;
+}
+
+.icon-input .icon-narrow:hover{
+    cursor: pointer;
+}
+
+.forgot-password{
+    display: flex;
+    margin: 0px 16px;
+    height: 48px;
+}
+
+.forgot-password p a{
+    font-size: 14px;
+    color: #0073e6;
+    text-decoration: none;
+    line-height: 48px;
+}
+
+.btn-layout{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.btn-layout .btn-login{
+    line-height: 48px;
+    width: 100%;
+    height: 48px;
+    color: #fff;
+    background-color: #0073e6;
+    border: 1px solid #ccc;
+    font-weight: bolder;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.btn-layout .btn-login:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+@keyframes getDown {
+    from{
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
